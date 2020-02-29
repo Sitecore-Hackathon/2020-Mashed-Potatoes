@@ -1,28 +1,44 @@
 import React from 'react';
+
+import Link from 'next/link';
+
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardHeader from '@material-ui/core/CardHeader';
 import CardMedia from '@material-ui/core/CardMedia';
-import CardContent from '@material-ui/core/CardContent';
+
 import CardActions from '@material-ui/core/CardActions';
+
 import IconButton from '@material-ui/core/IconButton';
-import Typography from '@material-ui/core/Typography';
+
 import { red } from '@material-ui/core/colors';
-import FavoriteIcon from '@material-ui/icons/Favorite';
+import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ShareIcon from '@material-ui/icons/Share';
+import Button from '@material-ui/core/Button';
 
-import MoreVertIcon from '@material-ui/icons/MoreVert';
-
-const useStyles = makeStyles(() => ({
+const useStyles = makeStyles((theme) => ({
   root: {
-    maxWidth: '100%',
-    maxHeight: '200px',
+    maxWidth: 345,
   },
   media: {
     height: 0,
+    paddingTop: '56.25%', // 16:9
+  },
+  expand: {
+    transform: 'rotate(0deg)',
+    marginLeft: 'auto',
+    transition: theme.transitions.create('transform', {
+      duration: theme.transitions.duration.shortest,
+    }),
+  },
+  expandOpen: {
+    transform: 'rotate(180deg)',
   },
   avatar: {
     backgroundColor: red[500],
+  },
+  participateButton: {
+    marginRight: '70px',
   },
 }));
 
@@ -30,27 +46,17 @@ const EventCard = () => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root}>
-      <CardHeader
-        action={
-          // eslint-disable-next-line react/jsx-wrap-multilines
-          <IconButton aria-label="settings">
-            <MoreVertIcon />
-          </IconButton>
-        }
-        title="Shrimp and Chorizo Paella"
-        subheader="September 14, 2016"
-      />
-      <CardMedia className={classes.media} image="/static/images/cards/paella.jpg" title="Paella dish" />
-      <CardContent>
-        <Typography variant="body2" color="textSecondary" component="p">
-          This impressive paella is a perfect party dish and a fun meal to cook together with your guests. Add 1 cup of
-          frozen peas along with the mussels, if you like.
-        </Typography>
-      </CardContent>
+    <Card className={classes.root} square>
+      <CardHeader title="Shrimp and Chorizo Paella" subheader="September 14, 2016" />
+      <CardMedia className={classes.media} image="https://via.placeholder.com/150" title="Paella dish" />
       <CardActions disableSpacing>
+        <Link href="/event">
+          <Button href="/event" className={classes.participateButton} variant="outlined">
+            Participate
+          </Button>
+        </Link>
         <IconButton aria-label="add to favorites">
-          <FavoriteIcon />
+          <LocationOnIcon />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />

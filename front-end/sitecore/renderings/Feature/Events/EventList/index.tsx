@@ -1,34 +1,37 @@
 import React from 'react';
 
-import { Grid } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+import Container from '@material-ui/core/Container';
 
-import { EventCard, EventTabs, TabPanel } from './components';
+import { Chips, EventCard } from './components';
+
+const useStyles = makeStyles(() => ({
+  root: {
+    paddingTop: '24px',
+  },
+
+  cards: {
+    marginTop: '12px',
+  },
+}));
 
 const EventList = () => {
-  const [value, setValue] = React.useState(0);
-
-  const handleChange = (event, newValue) => {
-    setValue(newValue);
-  };
+  const classes = useStyles();
 
   return (
-    <Grid container spacing={2}>
-      <Grid item xs={12}>
-        <EventTabs value={value} onChange={handleChange} />
+    <Container className={classes.root} maxWidth="xl">
+      <Grid xs={12}>
+        <Chips />
       </Grid>
-      <TabPanel value={value} index={0}>
-        <Grid container justify="center" spacing={4}>
-          {[0, 1, 2, 4].map((id) => (
-            <Grid key={id} item xs={12}>
-              <EventCard />
-            </Grid>
-          ))}
-        </Grid>
-      </TabPanel>
-      <TabPanel value={value} index={1}>
-        Item Two
-      </TabPanel>
-    </Grid>
+      <Grid className={classes.cards} container justify="space-between" spacing={4}>
+        {[0, 1, 2, 4].map((id) => (
+          <Grid key={id} item>
+            <EventCard />
+          </Grid>
+        ))}
+      </Grid>
+    </Container>
   );
 };
 
