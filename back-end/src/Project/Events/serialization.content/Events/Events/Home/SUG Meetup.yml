@@ -21,7 +21,11 @@ Languages:
         Speakers and agenda:<br />
         <br />
         Also React is awesome!<br />
-        &nbsp;<br />
+        Also React is awesome!<br />
+        Also React is awesome!<br />
+        Also React is awesome!<br />Also React is awesome!<br />Also React is awesome!<br />
+        Also React is awesome!<br />Also React is awesome!<br />Also React is awesome!<br />
+        <br />
         Vadzim Papko, Sitecore MVP &amp; enthusiast @ Sam Solutions - <a rel="noopener noreferrer" class="link" href="https://twitter.com/knopikmag" title="https://twitter.com/knopikmag">https://twitter.com/knopikmag</a><br />
         <br />
         Let&rsquo;s setup CI/CD for Sitecore Managed Cloud/PaaS using Azure DevOps pipelines.<br />
@@ -45,19 +49,8 @@ Languages:
         Semantic search denotes search with meaning, as distinguished from lexical search where the search engine looks for literal matches of the query words or variants of them, without understanding the overall meaning of the query. Semantic search systems consider various points including context of search, intent, variation of words, synonyms, generalized and specialized queries, concept matching and natural language queries to provide relevant search results.<br />
         To show capabilities of semantic search in Sitecore I prepared a demo that uses ML to find related items like news, articles, products etc based on NLP."<br />
         <br />
-        Please make sure to RSVP and visit the meetup as some of the topics will not be streamed on Youtube. And you can pick up some swag from Sitecore!</p>
-        <h2 id="before-we-start-the-tutorial" style="color: #000000; margin: 0px; padding: 0px;">Before We Start the Tutorial</h2>
-        <p style="color: #000000; margin: 30px 0px 0px; padding: 0px;">We will build a small game during this tutorial.&nbsp;<span style="margin: 0px; padding: 0px;">You might be tempted to skip it because you&rsquo;re not building games &mdash; but give it a chance.</span>&nbsp;The techniques you&rsquo;ll learn in the tutorial are fundamental to building any React app, and mastering it will give you a deep understanding of React.</p>
-        <p style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding: 0px;">Tip</p>
-        <p style="margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px;">This tutorial is designed for people who prefer to&nbsp;<span style="margin: 0px; padding: 0px;">learn by doing</span>. If you prefer learning concepts from the ground up, check out our&nbsp;<a href="https://reactjs.org/docs/hello-world.html" style="color: #1a1a1a; background-color: rgba(187, 239, 253, 0.3); margin: 0px; padding: 0px; border-bottom: 1px solid rgba(0, 0, 0, 0.2);">step-by-step guide</a>. You might find this tutorial and the guide complementary to each other.</p>
-        <p style="color: #000000; margin: 30px 0px 0px; padding: 0px;">The tutorial is divided into several sections:</p>
-        <ul style="color: #1a1a1a; margin: 20px 0px 0px; padding: 0px 0px 0px 20px; list-style-image: initial;">
-            <li style="margin: 10px 0px 0px; padding: 0px;"><a href="https://reactjs.org/tutorial/tutorial.html#setup-for-the-tutorial" style="color: #1a1a1a; background-color: rgba(187, 239, 253, 0.3); margin: 0px; padding: 0px; border-bottom: 1px solid rgba(0, 0, 0, 0.2);">Setup for the Tutorial</a>&nbsp;will give you&nbsp;<span style="margin: 0px; padding: 0px;">a starting point</span>&nbsp;to follow the tutorial.</li>
-            <li style="margin: 10px 0px 0px; padding: 0px;"><a href="https://reactjs.org/tutorial/tutorial.html#overview" style="color: #1a1a1a; background-color: rgba(187, 239, 253, 0.3); margin: 0px; padding: 0px; border-bottom: 1px solid rgba(0, 0, 0, 0.2);">Overview</a>&nbsp;will teach you&nbsp;<span style="margin: 0px; padding: 0px;">the fundamentals</span>&nbsp;of React: components, props, and state.</li>
-            <li style="margin: 10px 0px 0px; padding: 0px;"><a href="https://reactjs.org/tutorial/tutorial.html#completing-the-game" style="color: #1a1a1a; background-color: rgba(187, 239, 253, 0.3); margin: 0px; padding: 0px; border-bottom: 1px solid rgba(0, 0, 0, 0.2);">Completing the Game</a>&nbsp;will teach you&nbsp;<span style="margin: 0px; padding: 0px;">the most common techniques</span>&nbsp;in React development.</li>
-            <li style="margin: 10px 0px 0px; padding: 0px;"><a href="https://reactjs.org/tutorial/tutorial.html#adding-time-travel" style="color: #1a1a1a; background-color: rgba(187, 239, 253, 0.3); margin: 0px; padding: 0px; border-bottom: 1px solid rgba(0, 0, 0, 0.2);">Adding Time Travel</a>&nbsp;will give you&nbsp;<span style="margin: 0px; padding: 0px;">a deeper insight</span>&nbsp;into the unique strengths of React.</li>
-        </ul>
-        <p>
+        Please make sure to RSVP and visit the meetup as some of the topics will not be streamed on Youtube. And you can pick up some swag from Sitecore!<br />
+        <br />
         And you'll get a chance to win Resharper licenses!<br />
         <br />
         Location: Imaguru event space, 1st floor.</p>
