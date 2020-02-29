@@ -1,0 +1,22 @@
+# 3rd party code
+node_modules
+
+# Visual Studio Code files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains files
+.idea/
+
+# Next.js build files
+.next
+
+# Jest files
+coverage
+
+# Config file
+.env
+
+# yarn
+yarn-error.log

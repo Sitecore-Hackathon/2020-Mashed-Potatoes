@@ -1,0 +1,15 @@
+# .prettierrc
+printWidth: 120
+tabWidth: 2
+parser: typescript
+semi: true
+singleQuote: true
+arrowParens: "always"
+trailingComma: all
+bracketSpacing: true
+quoteProps: "consistent"
+endOfLine: "lf"
+overrides:
+  - files: "*.css"
+    options:
+      parser: css
