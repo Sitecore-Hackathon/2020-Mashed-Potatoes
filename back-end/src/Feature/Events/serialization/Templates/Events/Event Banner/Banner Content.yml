@@ -1,0 +1,14 @@
+﻿---
+ID: "8bb903bd-da69-4dba-baff-b74b81f9506c"
+Parent: "a84a516f-027b-48ed-967e-3c223a5d8e25"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Hackathon/Feature/Events/Event Banner/Banner Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T120805Z

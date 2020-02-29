@@ -1,0 +1,24 @@
+﻿---
+ID: "3bc4f39a-02ad-4d4e-a18f-f52a8c03acf7"
+Parent: "ef63fbee-7c34-49ca-bccf-c0777cb8d868"
+Template: "04646a89-996f-4ee7-878a-ffdbf1f0ef0d"
+Path: /sitecore/layout/Renderings/Hackathon/Feature/Events/Event List
+DB: master
+SharedFields:
+- ID: "037fe404-dd19-4bf7-8e30-4dadf68b27b0"
+  Hint: componentName
+  Value: Event List
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Office/32x32/elements3.png
+- ID: "b0b15510-b138-470e-8f33-8da2e228aafe"
+  Hint: Rendering Contents Resolver
+  Value: "{207769CC-38C0-4DE1-B893-A6B037B3AEC4}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T081617Z

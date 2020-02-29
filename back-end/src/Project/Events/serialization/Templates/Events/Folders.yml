@@ -1,0 +1,14 @@
+﻿---
+ID: "250b52bf-ebab-4aa0-97f0-c8688bafa562"
+Parent: "6e4a8b65-f9e8-4ab9-8c4a-bb8bd1eaacf7"
+Template: "0437fee2-44c9-46a6-abe9-28858d9fee8c"
+Path: /sitecore/templates/Hackathon/Project/Events/Folders
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T104444Z

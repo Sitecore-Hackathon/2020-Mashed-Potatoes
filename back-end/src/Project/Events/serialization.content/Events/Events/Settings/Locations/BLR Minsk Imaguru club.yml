@@ -1,0 +1,27 @@
+﻿---
+ID: "703dee03-d541-4bd8-aba3-1632972a2630"
+Parent: "e911dea9-1385-44b9-bbc0-3a5039a01163"
+Template: "671628b3-6df7-404c-bee1-f6ecac3e617d"
+Path: /sitecore/content/Events/Settings/Locations/BLR Minsk Imaguru club
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "137ea63b-2611-4b00-8a08-0eb1fb9d63e4"
+      Hint: Country
+      Value: Belarus
+    - ID: "15636572-9de4-4731-9373-2618f111896c"
+      Hint: Address
+      Value: Fabriciusa 4
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T105410Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "e2143988-da10-400e-9784-62111c5cdf45"
+      Hint: City
+      Value: Minsk

@@ -1,20 +1,20 @@
 ﻿---
-ID: "e479bd04-ae6a-40c6-889a-2380dce975fc"
-Parent: "a1e368c5-b637-4b4c-99e3-8d78a53ae513"
+ID: "ed64f55f-4b8e-4a09-847a-5603bf88c2a2"
+Parent: "250b52bf-ebab-4aa0-97f0-c8688bafa562"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Hackathon/Project/Events/Pages/Home
+Path: /sitecore/templates/Hackathon/Project/Events/Folders/Home Page Data Folder
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/home.png
+  Value: Office/32x32/folder.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{E60A4FFF-017D-43F6-9B8E-F25E4DD5715D}"
+  Value: "{A87A00B1-E6DB-45AB-8B54-636FEC3B5523}"
 - ID: "f7d48a55-2158-4f02-9356-756654404f73"
   Hint: __Standard values
-  Value: "{18ED639D-6688-4015-9698-5E648E0B5FE6}"
+  Value: "{18BEAB19-B09F-4C83-8486-5B374781BF1E}"
 Languages:
 - Language: en
   Versions:
@@ -22,4 +22,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T082805Z
+      Value: 20200229T121649Z

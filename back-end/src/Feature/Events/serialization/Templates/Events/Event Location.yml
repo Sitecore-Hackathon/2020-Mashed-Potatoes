@@ -1,17 +1,17 @@
 ﻿---
-ID: "ec13cea4-2d25-465e-8f7a-ef61e4b7b2a2"
-Parent: "6e4a8b65-f9e8-4ab9-8c4a-bb8bd1eaacf7"
+ID: "671628b3-6df7-404c-bee1-f6ecac3e617d"
+Parent: "ff84ed06-b5b4-4d2e-ba66-8b8c97235963"
 Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
-Path: /sitecore/templates/Hackathon/Project/Events/Site Root
+Path: /sitecore/templates/Hackathon/Feature/Events/Event Location
 DB: master
 SharedFields:
 - ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
   Hint: __Icon
-  Value: Office/32x32/earth2.png
+  Value: Office/32x32/location_pin.png
 - ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
   Hint: __Base template
   Type: tree list
-  Value: "{061CBA15-5474-4B91-8A06-17903B102B82}"
+  Value: "{1930BBEB-7805-471A-A3BE-4858AC7CF696}"
 Languages:
 - Language: en
   Versions:
@@ -19,4 +19,4 @@ Languages:
     Fields:
     - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
       Hint: __Created
-      Value: 20200229T082929Z
+      Value: 20200229T104728Z

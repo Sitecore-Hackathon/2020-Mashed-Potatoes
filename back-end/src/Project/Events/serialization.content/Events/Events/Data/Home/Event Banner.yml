@@ -1,0 +1,22 @@
+﻿---
+ID: "01c655bf-81ac-4456-8975-8c1d9cc90c7a"
+Parent: "5252e1f9-85dd-4db4-9a8d-44886d1c64b8"
+Template: "a84a516f-027b-48ed-967e-3c223a5d8e25"
+Path: /sitecore/content/Events/Data/Home/Event Banner
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T121934Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "bceb0fa1-d764-4736-b278-0d1bcb07d5ea"
+      Hint: Banner Image
+      Value: |
+        <image mediaid="{D48F7849-0556-4593-A72B-A8B4AC27B27C}" />

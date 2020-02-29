@@ -1,0 +1,14 @@
+﻿---
+ID: "e911dea9-1385-44b9-bbc0-3a5039a01163"
+Parent: "3222bc09-7e31-48c6-9ed8-96497e6709da"
+Template: "c1a98c2e-70b3-4601-a068-6204bc0f2387"
+Path: /sitecore/content/Events/Settings/Locations
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T105332Z

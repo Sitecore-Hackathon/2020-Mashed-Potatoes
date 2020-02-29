@@ -1,0 +1,18 @@
+﻿---
+ID: "e12bd90e-b066-4849-a828-84cfd346d20c"
+Parent: "61d2fcb7-7c58-40c9-900b-9659f4fa3a7f"
+Template: "23e0ea93-3a99-4967-b569-7239912e3093"
+Path: /sitecore/content/Events/Data
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 150
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T121840Z
