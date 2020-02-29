@@ -1,0 +1,19 @@
+﻿---
+ID: "0a5a45f6-b0f9-4590-aa2d-99df372283a5"
+Parent: "f0d55518-8506-45ac-ae76-6e0f55642e76"
+Template: "35c61e90-47dd-43dd-83a8-d1c4d5119720"
+Path: /sitecore/layout/Layouts/Hackathon/Project/Events/JSS Layout
+DB: master
+SharedFields:
+- ID: "80334869-86dc-4472-aa89-44cf1b2f6c9b"
+  Hint: Placeholders
+  Type: Treelist
+  Value: "{F91F8AD5-6890-4315-A9BB-2EFBE6DAE5C2}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T082305Z

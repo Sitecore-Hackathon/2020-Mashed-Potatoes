@@ -15,6 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configurat
 		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		nuget.config = nuget.config
+		publishsettings.targets = publishsettings.targets
 		README.md = README.md
 	EndProjectSection
 EndProject
@@ -29,12 +30,46 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{D27C83
 		documentation\images\hackathon.png = documentation\images\hackathon.png
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Foundation.Serialization", "src\Foundation\Serialization\code\Hackathon.Foundation.Serialization.csproj", "{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Feature.Events", "src\Feature\Events\code\Hackathon.Feature.Events.csproj", "{C2C9FC5F-51B0-4186-810C-65BBE433976A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Project.Events", "src\Project\Events\code\Hackathon.Project.Events.csproj", "{AD63344D-E5AC-4D0A-B440-730AE15AA102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hackathon.Foundation.Jss", "src\Foundation\Jss\code\Hackathon.Foundation.Jss.csproj", "{502A2290-2B50-47C9-8221-4FD47B36A78A}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2C9FC5F-51B0-4186-810C-65BBE433976A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2C9FC5F-51B0-4186-810C-65BBE433976A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2C9FC5F-51B0-4186-810C-65BBE433976A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2C9FC5F-51B0-4186-810C-65BBE433976A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD63344D-E5AC-4D0A-B440-730AE15AA102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD63344D-E5AC-4D0A-B440-730AE15AA102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD63344D-E5AC-4D0A-B440-730AE15AA102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD63344D-E5AC-4D0A-B440-730AE15AA102}.Release|Any CPU.Build.0 = Release|Any CPU
+		{502A2290-2B50-47C9-8221-4FD47B36A78A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{502A2290-2B50-47C9-8221-4FD47B36A78A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{502A2290-2B50-47C9-8221-4FD47B36A78A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{502A2290-2B50-47C9-8221-4FD47B36A78A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{D27C83D2-2EAF-4E44-A1ED-2B3C2EBB5854} = {DAFED8F5-6CBD-4384-AAD6-DC3BCCF24911}
+		{C1ADC6E3-1E13-4580-885B-E5BE790BB3C5} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
+		{C2C9FC5F-51B0-4186-810C-65BBE433976A} = {17DD5718-6E13-4F2C-9738-B410396D4552}
+		{AD63344D-E5AC-4D0A-B440-730AE15AA102} = {15D97D61-D597-42EC-B7E9-E9EC8130E630}
+		{502A2290-2B50-47C9-8221-4FD47B36A78A} = {4FDA1DCD-D33E-447E-91C1-F4AE818E2CF0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {311DA37D-528B-43B2-A99B-E7253F841D46}

@@ -1,0 +1,18 @@
+---
+ID: "3cd85105-c894-8377-b938-e100db539cf2"
+Parent: "da35dc6f-1096-9386-4829-00f50e79d4d7"
+Template: "c3b037a0-46e5-4b67-ac7a-a144b962a56f"
+Path: /sitecore/layout/Placeholder Settings/Hackathon/Foundation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170501T174657Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

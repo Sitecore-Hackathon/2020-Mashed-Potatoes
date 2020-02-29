@@ -1,0 +1,19 @@
+﻿---
+ID: "ec13cea4-2d25-465e-8f7a-ef61e4b7b2a2"
+Parent: "6e4a8b65-f9e8-4ab9-8c4a-bb8bd1eaacf7"
+Template: "ab86861a-6030-46c5-b394-e8f99e8b87db"
+Path: /sitecore/templates/Hackathon/Project/Events/Site Root
+DB: master
+SharedFields:
+- ID: "12c33f3f-86c5-43a5-aeb4-5598cec45116"
+  Hint: __Base template
+  Type: tree list
+  Value: "{061CBA15-5474-4B91-8A06-17903B102B82}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T082929Z

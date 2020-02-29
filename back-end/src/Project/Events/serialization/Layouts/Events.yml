@@ -1,0 +1,14 @@
+﻿---
+ID: "f0d55518-8506-45ac-ae76-6e0f55642e76"
+Parent: "e8e5ca1e-5edc-39ed-e334-10c317704e58"
+Template: "93227c5d-4fef-474d-94c0-f252ec8e8219"
+Path: /sitecore/layout/Layouts/Hackathon/Project/Events
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T090915Z

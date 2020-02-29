@@ -1,0 +1,18 @@
+﻿---
+ID: "51478763-1b4a-47b5-b426-b2761ccc112f"
+Parent: "61d2fcb7-7c58-40c9-900b-9659f4fa3a7f"
+Template: "e479bd04-ae6a-40c6-889a-2380dce975fc"
+Path: /sitecore/content/Events/Home
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T083126Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

@@ -1,0 +1,41 @@
+﻿---
+ID: "18ed639d-6688-4015-9698-5e648e0b5fe6"
+Parent: "e479bd04-ae6a-40c6-889a-2380dce975fc"
+Template: "e479bd04-ae6a-40c6-889a-2380dce975fc"
+Path: /sitecore/templates/Hackathon/Project/Events/Pages/Home/__Standard Values
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{0A5A45F6-B0F9-4590-AA2D-99DF372283A5}">
+        <r
+          id="{E1256274-50F7-442D-96AB-62E04A6DED11}"
+          ph="/content"
+          uid="{503BDF7D-0C31-48C6-A1FA-6140062F041F}" />
+        <r
+          id="{3BC4F39A-02AD-4D4E-A18F-F52A8C03ACF7}"
+          ph="/content"
+          uid="{A5BCDA2F-CC3A-4800-9375-13B8BDD8C2DB}" />
+        <r
+          id="{1D685659-8FE5-4162-8FDF-34B83E1063D8}"
+          ph="/content"
+          uid="{71429D42-26F2-4646-9379-466BC3E8EE2B}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T083201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

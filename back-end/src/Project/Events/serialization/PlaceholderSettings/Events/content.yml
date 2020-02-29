@@ -1,0 +1,25 @@
+﻿---
+ID: "f91f8ad5-6890-4315-a9bb-2efbe6dae5c2"
+Parent: "c74e696a-eca8-4963-a756-b9d4a704da97"
+Template: "5c547d4e-7111-4995-95b0-6b561751bf2e"
+Path: /sitecore/layout/Placeholder Settings/Hackathon/Project/Events/content
+DB: master
+SharedFields:
+- ID: "7256bdab-1fd2-49dd-b205-cb4873d2917c"
+  Hint: Placeholder Key
+  Value: content
+- ID: "e391b526-d0c5-439d-803e-17512eae6222"
+  Hint: Allowed Controls
+  Type: TreelistEx
+  Value: |
+    {E1256274-50F7-442D-96AB-62E04A6DED11}
+    {1D685659-8FE5-4162-8FDF-34B83E1063D8}
+    {3BC4F39A-02AD-4D4E-A18F-F52A8C03ACF7}
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20200229T082526Z

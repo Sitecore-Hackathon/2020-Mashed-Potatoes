@@ -1,0 +1,14 @@
+---
+ID: "91395133-e8fe-504d-c4cb-64b23882255f"
+Parent: "35115412-3420-3019-fc9c-9cdecf19df27"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/layout/Models/Hackathon/Foundation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170501T174734Z

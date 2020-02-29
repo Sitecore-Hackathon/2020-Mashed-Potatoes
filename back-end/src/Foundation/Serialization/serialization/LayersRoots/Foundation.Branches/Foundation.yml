@@ -1,0 +1,18 @@
+---
+ID: "26e9f9e5-2ce2-2a07-394c-848bc4490b3d"
+Parent: "d0aefd38-7ec3-bd4a-000e-a68d8df9fb35"
+Template: "85adbf5b-e836-4932-a333-fe0f9fa1ed1e"
+Path: /sitecore/templates/Branches/Hackathon/Foundation
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20170501T174657Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
