@@ -4,10 +4,12 @@
     "main": "index.js",
     "license": "MIT",
     "engines": {
-      "node": "12.16.0",
-      "yarn": "1.22.0"
+        "node": "12.16.0",
+        "yarn": "1.22.0"
     },
     "dependencies": {
+        "@material-ui/core": "^4.9.4",
+        "@material-ui/icons": "^4.9.1",
         "dotenv": "^8.2.0",
         "isomorphic-unfetch": "^3.0.0",
         "next": "^9.2.2",
@@ -15,6 +17,7 @@
         "normalize.css": "^8.0.1",
         "react": "^16.13.0",
         "react-dom": "^16.13.0",
+        "react-helmet": "^5.2.1",
         "react-redux": "^7.2.0",
         "redux": "^4.0.5",
         "redux-saga": "^1.1.3",

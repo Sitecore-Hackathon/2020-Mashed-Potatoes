@@ -2,8 +2,10 @@ import App from 'next/app';
 import withRedux from 'next-redux-wrapper';
 import React from 'react';
 import { Provider } from 'react-redux';
+import { ThemeProvider } from '@material-ui/core';
 
 import makeStore, { AppStore } from '../store';
+import theme from '../theme';
 
 import 'normalize.css/normalize.css';
 
@@ -24,9 +26,13 @@ class CustomApp extends App<AppProps> {
     const { Component, pageProps, store } = this.props;
 
     return (
-      <Provider store={store}>
-        <Component {...pageProps} />
-      </Provider>
+      <>
+        <Provider store={store}>
+          <ThemeProvider theme={theme}>
+            <Component {...pageProps} />
+          </ThemeProvider>
+        </Provider>
+      </>
     );
   }
 }
