@@ -6,6 +6,9 @@ import Container from '@material-ui/core/Container';
 
 import { Chips, EventCard } from './components';
 
+import { EventData, Item } from '../../../../models';
+import { concatLocation } from '../../../../utils';
+
 const useStyles = makeStyles(() => ({
   root: {
     paddingTop: '24px',
@@ -16,7 +19,11 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const EventList = () => {
+interface EventListProps {
+  fields: { items: Array<Item<EventData>> };
+}
+
+const EventList = ({ fields }: EventListProps) => {
   const classes = useStyles();
 
   return (
@@ -24,10 +31,17 @@ const EventList = () => {
       <Grid xs={12}>
         <Chips />
       </Grid>
-      <Grid className={classes.cards} container justify="space-between" spacing={4}>
-        {[0, 1, 2, 4].map((id) => (
+      <Grid className={classes.cards} container justify="center" spacing={4}>
+        {fields.items.map(({ fields: itemFields, id, name }) => (
           <Grid key={id} item>
-            <EventCard />
+            <EventCard
+              title={itemFields.Title.value}
+              date={itemFields.Date.value}
+              location={concatLocation(itemFields.Location.fields)}
+              image={{ ...itemFields['Event Banner'].value }}
+              subtitle={itemFields.Subtitle.value}
+              url={`/${name}`}
+            />
           </Grid>
         ))}
       </Grid>

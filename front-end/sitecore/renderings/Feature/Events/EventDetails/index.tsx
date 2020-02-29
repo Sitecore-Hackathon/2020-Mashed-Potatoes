@@ -1,19 +1,24 @@
 import React from 'react';
 
-import { Image, RichText } from '@sitecore-jss/sitecore-jss-react';
+import { Image, RichText, withSitecoreContext } from '@sitecore-jss/sitecore-jss-react';
 
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Paper from '@material-ui/core/Paper';
 import Typography from '@material-ui/core/Typography';
-import Button from '@material-ui/core/Button';
-import IconButton from '@material-ui/core/IconButton';
 
+import IconButton from '@material-ui/core/IconButton';
+import Divider from '@material-ui/core/Divider';
+
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import ShareIcon from '@material-ui/icons/Share';
 
-import richTextField from './richText.json';
+import { Tags } from './components';
+import { SitecoreContext, EventData } from '../../../../models';
+import { concatLocation } from '../../../../utils';
 
 const useStyles = makeStyles(() => ({
   header: {
@@ -24,37 +29,57 @@ const useStyles = makeStyles(() => ({
   },
 }));
 
-const EventDetails = () => {
+export interface EventDetailsProps extends SitecoreContext<EventData> {}
+
+const EventDetails = ({ sitecoreContext: { route } }: EventDetailsProps) => {
   const classes = useStyles();
 
-  const bannerImage = {
-    value: {
-      src: 'https://via.placeholder.com/1400x282',
-      alt: '',
-    },
-  };
+  const { fields } = route;
+
+  const tags = 'Angular|jQuery|Polymer|React|Vue.js'
+    .split('|')
+    .map((tagLabel, index) => ({ label: tagLabel, key: index }));
+
   return (
     <>
       <div>
-        <Image className={classes.image} field={bannerImage} />
+        <Image className={classes.image} field={fields['Event Banner']} />
       </div>
       <Paper className={classes.header} elevation={3} square>
         <Container maxWidth="xl">
           <Grid container>
             <Grid className={classes.header} xs={8}>
-              <Typography variant="h2">Lorem Ipsum</Typography>
-              <Typography variant="h6">date and time</Typography>
-              <Typography variant="h4">Location</Typography>
+              <Typography variant="h2">{fields.Title.value}</Typography>
+              <Typography variant="h6">{fields.Date.value}</Typography>
+              <Typography variant="h4">{concatLocation(fields.Location.fields)}</Typography>
+
+              <Tags tags={tags} />
             </Grid>
             <Grid xs={4} justify="flex-end">
-              <Grid container justify="flex-end" alignItems="center" style={{ height: '100%' }}>
-                <Button variant="outlined">Download ICS</Button>
-                <IconButton aria-label="add to favorites">
-                  <LocationOnIcon />
-                </IconButton>
-                <IconButton aria-label="share">
-                  <ShareIcon />
-                </IconButton>
+              <Grid
+                container
+                direction="column"
+                justify="space-around"
+                alignItems="flex-end"
+                style={{ height: '100%' }}
+              >
+                <div>
+                  <Typography variant="h6">Organized by</Typography>
+                  <Box fontWeight="700" fontStyle="italic" fontSize="36px">
+                    {fields.Organizer.value}
+                  </Box>
+                </div>
+                <div>
+                  <IconButton aria-label="download calendar meeting">
+                    <CloudDownloadIcon />
+                  </IconButton>
+                  <IconButton aria-label="add to favorites">
+                    <LocationOnIcon />
+                  </IconButton>
+                  <IconButton aria-label="share">
+                    <ShareIcon />
+                  </IconButton>
+                </div>
               </Grid>
             </Grid>
           </Grid>
@@ -73,7 +98,8 @@ const EventDetails = () => {
         <Grid container>
           <Grid xs={12}>
             <Typography variant="h4">Details</Typography>
-            <RichText field={richTextField} />
+            <Divider />
+            <RichText field={fields.Description} />
           </Grid>
         </Grid>
       </Container>
@@ -81,4 +107,4 @@ const EventDetails = () => {
   );
 };
 
-export default EventDetails;
+export default withSitecoreContext()(EventDetails);

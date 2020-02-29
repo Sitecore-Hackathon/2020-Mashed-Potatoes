@@ -5,11 +5,12 @@ import { Image } from '@sitecore-jss/sitecore-jss-react';
 import Grid from '@material-ui/core/Grid';
 import { makeStyles } from '@material-ui/core/styles';
 
+import { ImageField } from '../../../../models';
+
 const useStyles = makeStyles(() => ({
   root: {
     position: 'relative',
-    // marginTop: '8px',
-    paddingTop: '20%',
+    paddingTop: '37%',
   },
   img: {
     position: 'absolute',
@@ -18,22 +19,22 @@ const useStyles = makeStyles(() => ({
     right: 0,
     left: 0,
     width: '100%',
+    height: 'auto',
   },
 }));
 
-const EventBanner = () => {
-  const classes = useStyles();
-
-  const bannerImage = {
-    value: {
-      src: 'https://via.placeholder.com/1400x282',
-      alt: '',
-    },
+interface EventBannerProps {
+  fields: {
+    ['Banner Image']: ImageField;
   };
+}
+
+const EventBanner = ({ fields }: EventBannerProps) => {
+  const classes = useStyles();
 
   return (
     <Grid container className={classes.root}>
-      <Image className={classes.img} field={bannerImage} />
+      <Image className={classes.img} field={fields['Banner Image']} />
     </Grid>
   );
 };

@@ -7,9 +7,9 @@ const Subscribe = dynamic(() => import('./Feature/Events/Subscribe'));
 
 const components = new Map<string, any>();
 
-components.set('EventBanner', EventBanner);
-components.set('EventList', EventList);
-components.set('EventDetails', EventDetails);
+components.set('Event Banner', EventBanner);
+components.set('Event List', EventList);
+components.set('Event Details', EventDetails);
 components.set('Subscribe', Subscribe);
 
 export default (componentName: string) => components.get(componentName);

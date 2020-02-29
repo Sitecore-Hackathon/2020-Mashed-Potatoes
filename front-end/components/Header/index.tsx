@@ -16,12 +16,11 @@ const Header = ({ title }: HeaderProps) => (
     <AppBar position="static">
       <Toolbar>
         <Box component="span" m={1}>
-          <Link href="/">
-            <a href="/" className="logo">
-              <img src="/hackathon-logo.png" alt="logo" />
-              <Typography variant="h6">{title}</Typography>
-              <style>
-                {`
+          <a href="/" className="logo">
+            <img src="/hackathon-logo.png" alt="logo" />
+            <Typography variant="h6">{title}</Typography>
+            <style>
+              {`
                 .logo {
                   display: flex;
                   align-items: center;
@@ -41,9 +40,8 @@ const Header = ({ title }: HeaderProps) => (
 
                 .logo
               `}
-              </style>
-            </a>
-          </Link>
+            </style>
+          </a>
         </Box>
       </Toolbar>
     </AppBar>

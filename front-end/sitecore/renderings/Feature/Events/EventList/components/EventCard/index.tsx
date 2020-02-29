@@ -10,9 +10,11 @@ import CardMedia from '@material-ui/core/CardMedia';
 import CardActions from '@material-ui/core/CardActions';
 
 import IconButton from '@material-ui/core/IconButton';
+import { Typography, CardContent } from '@material-ui/core';
 
 import { red } from '@material-ui/core/colors';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
+import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
 import ShareIcon from '@material-ui/icons/Share';
 import Button from '@material-ui/core/Button';
 
@@ -38,28 +40,57 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: red[500],
   },
   participateButton: {
-    marginRight: '70px',
+    marginRight: '50px',
   },
 }));
 
-const EventCard = () => {
+interface EventCardProps {
+  title: string;
+  date: string;
+  location: string;
+  subtitle: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  url: string;
+}
+
+const EventCard = ({ title, location, image, url, date, subtitle }: EventCardProps) => {
   const classes = useStyles();
 
   return (
-    <Card className={classes.root} square>
-      <CardHeader title="Shrimp and Chorizo Paella" subheader="September 14, 2016" />
-      <CardMedia className={classes.media} image="https://via.placeholder.com/150" title="Paella dish" />
+    <Card className={classes.root} square variant="outlined">
+      <CardHeader
+        title={title}
+        subheader={
+          // eslint-disable-next-line react/jsx-wrap-multilines
+          <>
+            <Typography variant="caption">{location}</Typography>
+            <Typography variant="h6">{date}</Typography>
+          </>
+        }
+      />
+      <CardMedia className={classes.media} image={image.src} title={image.alt} />
+      <CardContent>
+        <Typography variant="body2" color="textSecondary" component="p">
+          {subtitle}
+        </Typography>
+      </CardContent>
       <CardActions disableSpacing>
-        <Link href="/event">
-          <Button href="/event" className={classes.participateButton} variant="outlined">
-            Participate
+        <Link href={url}>
+          <Button href={url} className={classes.participateButton} variant="outlined">
+            Learn More
           </Button>
         </Link>
-        <IconButton aria-label="add to favorites">
+        <IconButton aria-label="location">
           <LocationOnIcon />
         </IconButton>
         <IconButton aria-label="share">
           <ShareIcon />
+        </IconButton>
+        <IconButton aria-label="download calendar meeting">
+          <CloudDownloadIcon />
         </IconButton>
       </CardActions>
     </Card>

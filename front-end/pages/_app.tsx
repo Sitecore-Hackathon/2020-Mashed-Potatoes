@@ -34,7 +34,10 @@ class CustomApp extends App<AppProps> {
       return <h1>404</h1>;
     }
 
-    contextFactory.setSitecoreContext((pageProps as LayoutServiceData).sitecore.context);
+    contextFactory.setSitecoreContext({
+      ...(pageProps as LayoutServiceData).sitecore.context,
+      route: (pageProps as LayoutServiceData).sitecore.route,
+    });
     return (
       <>
         <Provider store={store}>
