@@ -10,15 +10,12 @@ import makeStore, { AppStore } from '../store';
 import theme from '../theme';
 import componentFactory from '../sitecore/renderings';
 import contextFactory from '../sitecore/context';
+import { LayoutServiceData } from '../sitecore/models';
 
 import 'normalize.css/normalize.css';
 
 interface AppProps {
   store: AppStore;
-}
-
-interface PageProps<TData> {
-  data: TData;
 }
 
 class CustomApp extends App<AppProps> {
@@ -37,10 +34,7 @@ class CustomApp extends App<AppProps> {
       return <h1>404</h1>;
     }
 
-    const { data } = pageProps as PageProps<{}>;
-
-    // TODO: set sitecore context
-    contextFactory.setSitecoreContext(data);
+    contextFactory.setSitecoreContext((pageProps as LayoutServiceData).sitecore.context);
     return (
       <>
         <Provider store={store}>
