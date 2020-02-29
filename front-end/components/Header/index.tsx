@@ -11,18 +11,17 @@ interface HeaderProps {
   title: string;
 }
 
-const Header = ({ title }: HeaderProps) => {
-  return (
-    <div>
-      <AppBar position="static">
-        <Toolbar>
-          <Box component="span" m={1}>
-            <Link href="/">
-              <a href="/" className="logo">
-                <img src="/hackathong-logo.png" alt="logo" />
-                <Typography variant="h6">{title}</Typography>
-                <style>
-                  {`
+const Header = ({ title }: HeaderProps) => (
+  <div>
+    <AppBar position="static">
+      <Toolbar>
+        <Box component="span" m={1}>
+          <Link href="/">
+            <a href="/" className="logo">
+              <img src="/hackathon-logo.png" alt="logo" />
+              <Typography variant="h6">{title}</Typography>
+              <style>
+                {`
                 .logo {
                   display: flex;
                   align-items: center;
@@ -42,14 +41,13 @@ const Header = ({ title }: HeaderProps) => {
 
                 .logo
               `}
-                </style>
-              </a>
-            </Link>
-          </Box>
-        </Toolbar>
-      </AppBar>
-    </div>
-  );
-};
+              </style>
+            </a>
+          </Link>
+        </Box>
+      </Toolbar>
+    </AppBar>
+  </div>
+);
 
 export default Header;

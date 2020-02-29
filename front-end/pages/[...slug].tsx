@@ -1,9 +1,9 @@
 import React from 'react';
 import { NextPage } from 'next';
 import dynamic from 'next/dynamic';
+import { Placeholder } from '@sitecore-jss/sitecore-jss-react';
 
-import Helmet from '../components/Helmet';
-
+const Helmet = dynamic(() => import('../components/Helmet'));
 const Header = dynamic(() => import('../components/Header'));
 
 const Root: NextPage<{ data: any }> = ({ data }) => {
@@ -12,10 +12,13 @@ const Root: NextPage<{ data: any }> = ({ data }) => {
   }
 
   const title = 'Sitecore: Event HUB';
+
   return (
     <>
       <Helmet title={title} />
       <Header title={title} />
+      <Placeholder tag="main" name="main" rendering={{} as any} />
+      <footer />
     </>
   );
 };
