@@ -4,6 +4,7 @@
 
 **Category:** 1. Sitecore Meetup Website
 
+Our team MASHED POTATOES Decided to help Sitecore Developer to catch up with each other and share knowledge.
 We have build the a meetup website which is completely based on Sitecore using Sitecore JSS with Headless approach.
 
 It supports following features:
@@ -37,7 +38,7 @@ Of course it was hard to implement everything we planned during the hackathon, s
 
 We have decided to use Sitecore JSS Headless with Docker. In general high-level architecture diagram looks like this:
 
-![Hackathon Logo](images/architecture.jpg?raw=true "Hackathon Logo")
+![Architecture](images/architecture.jpg?raw=true "Hackathon Logo")
 
 Of course during the Hackathon we haven't build the entire infrastructure, faced with some issue with Sitecore Docker and had to fallback to Vagrant.
 
@@ -69,42 +70,41 @@ Does your module rely on other Sitecore modules or frameworks?
 
 ## Configuration
 
-How do you configure your module once it is installed? Are there items that need to be updated with settings, or maybe config files need to have keys updated?
+### Sitecore
 
-Remember you are using Markdown, you can provide code samples too:
+The only configuration required is change of config to pass tokens for Azure's cognitive service.
+
+In order to do it you need to update 'Hackathon.Feature.Events.AzureTextAnalytics.config' after package is installed with your personal key and url to Azure Text Analytics Service
 
 ```xml
 <?xml version="1.0"?>
 <!--
-  Purpose: Configuration settings for my hackathon module
+  Purpose: Azure Text Analytics Service configuration
 -->
-<configuration xmlns:patch="http://www.sitecore.net/xmlconfig/">
-  <sitecore>
-    <settings>
-      <setting name="MyModule.Setting" value="Hackathon" />
-    </settings>
-  </sitecore>
+<configuration
+    xmlns:patch="http://www.sitecore.net/xmlconfig/">
+    <sitecore>
+        <azureTextAnalyticsConfiguration type="Hackathon.Feature.Events.Models.AzureTextAnalyticsConfiguration, Hackathon.Feature.Events">
+            <apiKey>[key]</apiKey>
+            <endpoint>https://enpoint.cognitiveservices.azure.com/</endpoint>
+        </azureTextAnalyticsConfiguration>
+    </sitecore>
 </configuration>
+
 ```
+
+### Next.js
+
+There are no any specific configuration connected with next.js except the env file. It was described in the 'Installation' section.
 
 ## Usage
 
-Provide documentation about your module, how do the users use your module, where are things located, what do icons mean, are there any secret shortcuts etc.
+Features which are support by Events HUB (it's a name of our meetup web site) is described in the Summary section. Here we just attach screenshots and link to video with demo and presentation.
 
-Please include screenshots where necessary. You can add images to the `./images` folder and then link to them from your documentation:
+### Home page
 
-![Hackathon Logo](images/hackathon.png?raw=true "Hackathon Logo")
+![Home page](images/home.png?")
 
-You can embed images of different formats too:
+### Event Details page
 
-![Deal With It](images/deal-with-it.gif?raw=true "Deal With It")
-
-And you can embed external images too:
-
-![Random](https://placeimg.com/480/240/any "Random")
-
-## Video
-
-Please provide a video highlighing your Hackathon module submission and provide a link to the video. Either a [direct link](https://www.youtube.com/watch?v=EpNhxW4pNKk) to the video, upload it to this documentation folder or maybe upload it to Youtube...
-
-[![Sitecore Hackathon Video Embedding Alt Text](https://img.youtube.com/vi/EpNhxW4pNKk/0.jpg)](https://www.youtube.com/watch?v=EpNhxW4pNKk)
+![Event Details page](images/details.png?")

@@ -35,7 +35,7 @@ const Tags = ({ tags }: TagsProps) => {
       {tags.map((data) => {
         let icon;
 
-        if (data.label === 'React') {
+        if (data.label === 'Sitecore MVP') {
           icon = <TagFacesIcon />;
         }
 

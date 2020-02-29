@@ -10,7 +10,7 @@ import { ImageField } from '../../../../models';
 const useStyles = makeStyles(() => ({
   root: {
     position: 'relative',
-    paddingTop: '37%',
+    paddingTop: '29%',
   },
   img: {
     position: 'absolute',

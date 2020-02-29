@@ -24,8 +24,17 @@ const useStyles = makeStyles(() => ({
   header: {
     marginBottom: '12px',
   },
+  imageContainer: {
+    position: 'relative',
+    paddingTop: '40%',
+  },
   image: {
+    position: 'absolute',
+    top: 0,
+    bottom: 0,
     width: '100%',
+    height: 'auto',
+    maxHeight: '400px',
   },
 }));
 
@@ -36,13 +45,11 @@ const EventDetails = ({ sitecoreContext: { route } }: EventDetailsProps) => {
 
   const { fields } = route;
 
-  const tags = 'Angular|jQuery|Polymer|React|Vue.js'
-    .split('|')
-    .map((tagLabel, index) => ({ label: tagLabel, key: index }));
+  const tags = fields.Tags.value.split('|').map((tagLabel, index) => ({ label: tagLabel, key: index }));
 
   return (
     <>
-      <div>
+      <div className={classes.imageContainer}>
         <Image className={classes.image} field={fields['Event Banner']} />
       </div>
       <Paper className={classes.header} elevation={3} square>

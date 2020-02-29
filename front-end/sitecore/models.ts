@@ -48,4 +48,5 @@ export interface EventData {
   'Description': TextField;
   'Is Featured': BooleanField;
   'Event Banner': ImageField;
+  'Tags': TextField;
 }
